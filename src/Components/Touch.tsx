@@ -47,7 +47,7 @@ function Touch(props: TouchProps, ref: React.Ref<View> | undefined) {
       onPressOut={onPressOut}
       pressRetentionOffset={pressRetentionOffset}
       style={({ pressed }) => [
-        { opacity: Platform.OS === "ios" ? (pressed ? 0.5 : 1.0) : 1.0 },
+        { opacity: Platform.OS !== "android" ? (pressed ? 0.5 : 1.0) : 1.0 },
         styleProps,
         {
           borderRadius,
