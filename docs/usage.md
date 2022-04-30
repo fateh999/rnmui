@@ -1,7 +1,7 @@
 ```jsx
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import { Block, Typography, Picture, Container } from "rnmui";
+import { Block, Typography, Picture, Container } from "rnmuilib";
 
 function App() {
   return (

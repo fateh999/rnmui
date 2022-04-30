@@ -1,15 +1,15 @@
-# rnmui
+# rnmuilib
 
-[![npm version](https://img.shields.io/npm/v/rnmui.svg?style=for-the-badge)](https://www.npmjs.com/package/rnmui)
-[![npm downloads](https://img.shields.io/npm/dm/rnmui.svg?style=for-the-badge)](https://www.npmjs.com/package/rnmui)
-[![npm](https://img.shields.io/npm/dt/rnmui.svg?style=for-the-badge)](https://www.npmjs.com/package/rnmui)
-[![npm](https://img.shields.io/npm/l/rnmui?style=for-the-badge)](https://github.com/fateh999/rnmui/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/rnmuilib.svg?style=for-the-badge)](https://www.npmjs.com/package/rnmuilib)
+[![npm downloads](https://img.shields.io/npm/dm/rnmuilib.svg?style=for-the-badge)](https://www.npmjs.com/package/rnmuilib)
+[![npm](https://img.shields.io/npm/dt/rnmuilib.svg?style=for-the-badge)](https://www.npmjs.com/package/rnmuilib)
+[![npm](https://img.shields.io/npm/l/rnmuilib?style=for-the-badge)](https://github.com/fateh999/rnmuilib/blob/master/LICENSE)
 
 React Native Minimalistic UI Library with barebones components to easily create any UI you want
 
 #### Documentation :
 
-- [https://fateh999.github.io/rnmui](https://fateh999.github.io/rnmui)
+- [https://fateh999.github.io/rnmuilib](https://fateh999.github.io/rnmuilib)
 
 #### Demo :
 
@@ -20,7 +20,7 @@ React Native Minimalistic UI Library with barebones components to easily create 
 
 ```javascript
 
-npm install rnmui
+npm install rnmuilib
 
 ```
 
@@ -28,12 +28,12 @@ or
 
 ```javascript
 
-yarn add rnmui
+yarn add rnmuilib
 
 ```
 
 ```javascript
-import { Block, Typography, Picture } from "rnmui";
+import { Block, Typography, Picture } from "rnmuilib";
 ```
 
 #### Usage :
@@ -41,7 +41,7 @@ import { Block, Typography, Picture } from "rnmui";
 ```javascript
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import { Block, Typography, Picture, Container } from "rnmui";
+import { Block, Typography, Picture, Container } from "rnmuilib";
 
 function App() {
   return (
@@ -88,7 +88,7 @@ function App() {
             2. Typography
           </Typography>
           <Typography fontSize={48} fontWeight={"bold"} color={"red"}>
-            RNMUI
+            rnmuilib
           </Typography>
         </Block>
 
