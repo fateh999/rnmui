@@ -13,8 +13,8 @@ React Native Minimalistic UI Library with barebones components to easily create 
 
 #### Demo :
 
-![](iOS.png)
-![](Android.png)
+![](https://github.com/fateh999/rnmuilib/raw/main/iOS.png)
+![](https://github.com/fateh999/rnmuilib/raw/main/Android.png)
 
 #### Web Demo :
 
