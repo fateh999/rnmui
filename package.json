@@ -8,6 +8,9 @@
     "build": "tsc",
     "watch": "tsc -w"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fateh999/rnmui.git"
