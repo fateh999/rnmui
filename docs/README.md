@@ -11,14 +11,14 @@ React Native Minimalistic UI Library with barebones components to easily create 
 
 - [https://fateh999.github.io/rnmuilib](https://fateh999.github.io/rnmuilib)
 
+#### Web Demo :
+
+https://snack.expo.dev/@fateh999/rnmuilib
+
 #### Demo :
 
 ![](https://github.com/fateh999/rnmuilib/raw/main/iOS.png)
 ![](https://github.com/fateh999/rnmuilib/raw/main/Android.png)
-
-#### Web Demo :
-
-https://snack.expo.dev/@fateh999/rnmuilib
 
 #### Steps to install :
 
