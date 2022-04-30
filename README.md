@@ -14,7 +14,7 @@ React Native Minimalistic UI Library with barebones components to easily create 
 #### Demo :
 
 ![](iOS.png)
-![](android.png)
+![](Android.png)
 
 #### Steps to install :
 
