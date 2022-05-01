@@ -7,6 +7,7 @@ import {
   ViewStyle,
 } from "react-native";
 import useElevationStyles from "../Hooks/useElevationStyles";
+import Block from "./Block";
 
 export type TouchProps = PressableProps & ViewStyle & { style?: ViewStyle };
 
@@ -26,38 +27,45 @@ function Touch(props: TouchProps, ref: React.Ref<View> | undefined) {
     testID,
     style,
     borderRadius,
-    elevation = 0,
+    elevation = 5,
     shadowColor,
     ...styleProps
   } = props;
   const elevationStyles = useElevationStyles(elevation, shadowColor);
 
   return (
-    <Pressable
-      ref={ref}
-      testID={testID}
-      android_disableSound={android_disableSound}
-      android_ripple={android_ripple}
-      delayLongPress={delayLongPress}
-      disabled={disabled}
-      hitSlop={hitSlop}
-      onPress={onPress}
-      onLongPress={onLongPress}
-      onPressIn={onPressIn}
-      onPressOut={onPressOut}
-      pressRetentionOffset={pressRetentionOffset}
-      style={({ pressed }) => [
-        { opacity: Platform.OS !== "android" ? (pressed ? 0.5 : 1.0) : 1.0 },
-        styleProps,
-        {
-          borderRadius,
-          ...elevationStyles,
-        },
-        style,
-      ]}
+    <Block
+      style={{
+        borderRadius,
+        ...elevationStyles,
+      }}
     >
-      {children}
-    </Pressable>
+      <Block borderRadius={borderRadius} overflow={"hidden"}>
+        <Pressable
+          ref={ref}
+          testID={testID}
+          android_disableSound={android_disableSound}
+          android_ripple={android_ripple}
+          delayLongPress={delayLongPress}
+          disabled={disabled}
+          hitSlop={hitSlop}
+          onPress={onPress}
+          onLongPress={onLongPress}
+          onPressIn={onPressIn}
+          onPressOut={onPressOut}
+          pressRetentionOffset={pressRetentionOffset}
+          style={({ pressed }) => [
+            {
+              opacity: Platform.OS !== "android" ? (pressed ? 0.5 : 1.0) : 1.0,
+            },
+            styleProps,
+            style,
+          ]}
+        >
+          {children}
+        </Pressable>
+      </Block>
+    </Block>
   );
 }
 

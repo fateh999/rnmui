@@ -7,10 +7,6 @@
 
 React Native Minimalistic UI Library with barebones components to easily create any UI you want
 
-#### Documentation :
-
-- [https://fateh999.github.io/rnmuilib](https://fateh999.github.io/rnmuilib)
-
 #### Web Demo :
 
 https://snack.expo.dev/@fateh999/rnmuilib

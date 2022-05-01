@@ -1,6 +1,6 @@
 import React from 'react';
 import {ScrollView, StyleSheet} from 'react-native';
-import {Block, Typography, Picture, Container} from 'rnmui';
+import {Block, Typography, Picture, Container, Center, Touch} from 'rnmuilib';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           Kitchen Sink
         </Typography>
       </Block>
+      {/* @ts-ignore */}
       <ScrollView
         style={styles.scrollView}
         showsVerticalScrollIndicator={false}>
@@ -63,6 +64,30 @@ function App() {
             }}
           />
         </Block>
+
+        <Block marginHorizontal={20}>
+          <Typography
+            fontSize={16}
+            color={'black'}
+            fontWeight={'bold'}
+            marginVertical={20}>
+            4. Touch
+          </Typography>
+
+          <Touch
+            borderRadius={10}
+            height={50}
+            backgroundColor={'lightblue'}
+            onPress={() => {}}>
+            <Center flex={1}>
+              <Typography color={'black'} fontWeight={'bold'}>
+                Click Me
+              </Typography>
+            </Center>
+          </Touch>
+        </Block>
+
+        <Block height={50} />
       </ScrollView>
     </Container>
   );

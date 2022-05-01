@@ -5,8 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w"
+    "build": "tsc && npm run minify",
+    "watch": "tsc -w && npm run minify",
+    "minify": "node minify"
   },
   "files": [
     "dist"
@@ -29,10 +30,11 @@
   },
   "homepage": "https://github.com/fateh999/rnmuilib#readme",
   "peerDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "jsmin": "*",
     "react": "*",
     "react-native": "*",
-    "typescript": "*",
-    "@types/react": "*",
-    "@types/react-native": "*"
+    "typescript": "*"
   }
 }
