@@ -46,21 +46,21 @@ function useMediaQuery() {
     const mediaQuery = useCallback((dimensions) => {
         if (Array.isArray(dimensions)) {
             const [base, sm, md, lg, xl] = dimensions;
-            return resultantDimension(base, sm, lg, md, xl);
+            return resultantDimension(base, sm, md, lg, xl);
         }
         else {
             const { base, sm, md, lg, xl } = dimensions;
-            return resultantDimension(base, sm, lg, md, xl);
+            return resultantDimension(base, sm, md, lg, xl);
         }
     }, [width, resultantDimension]);
     const mediaQueryLogic = useCallback((dimensions) => {
         if (Array.isArray(dimensions)) {
             const [base, sm, md, lg, xl] = dimensions;
-            return resultantValue(base, sm, lg, md, xl);
+            return resultantValue(base, sm, md, lg, xl);
         }
         else {
             const { base, sm, md, lg, xl } = dimensions;
-            return resultantValue(base, sm, lg, md, xl);
+            return resultantValue(base, sm, md, lg, xl);
         }
     }, [width, resultantValue]);
     return {
