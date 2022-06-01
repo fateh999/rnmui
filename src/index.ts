@@ -3,6 +3,7 @@ import SafeAreaBlock from "./Components/SafeAreaBlock";
 import Typography from "./Components/Typography";
 import Picture from "./Components/Picture";
 import useElevationStyles from "./Hooks/useElevationStyles";
+import useMediaQuery from "./Hooks/useMediaQuery";
 import Touch from "./Components/Touch";
 import Center from "./Components/Center";
 import HStack from "./Components/HStack";
@@ -20,4 +21,5 @@ export {
   VStack,
   Container,
   useElevationStyles,
+  useMediaQuery,
 };

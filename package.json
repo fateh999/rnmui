@@ -1,6 +1,6 @@
 {
   "name": "rnmuilib",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React Native Minimalistic UI Library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,7 +21,8 @@
     "Native",
     "Minimalistic",
     "UI",
-    "Library"
+    "Library",
+    "Media Query"
   ],
   "author": "Fateh Farooqui",
   "license": "MIT",
